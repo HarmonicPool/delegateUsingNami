@@ -1,7 +1,7 @@
 ## Contents
 - [NextJs](#NextJs)
 
-\
+
 ## NextJs
 
 
