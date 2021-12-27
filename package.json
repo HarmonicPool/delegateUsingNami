@@ -1,12 +1,14 @@
 {
-  "name": "delegate-using-nami",
+  "name": "@harmonic/delegate-using-nami",
   "version": "1.0.0",
-  "description": "simple function allowing your website to have an interface with the Nami Wallet in order to delegate to a give pool",
+  "description": "simple function allowing your website to have an interface with the Nami Wallet in order to delegate to a pool",
   "main": "index.js",
   "scripts": {
     "test": "test"
   },
   "keywords": [
+    "Nami",
+    "NamiWallet",
     "cardano",
     "ADA",
     "delegation",
@@ -14,5 +16,17 @@
     "decentralization"
   ],
   "author": "Michele Nuzzi",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarmonicPool/delegateUsingNami.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HarmonicPool/delegateUsingNami/issues"
+  },
+  "homepage": "https://github.com/HarmonicPool/delegateUsingNami#readme",
+  "dependencies": {
+    "@emurgo/cardano-serialization-lib-browser": "^9.1.2",
+    "buffer": "^6.0.3"
+  }
 }
