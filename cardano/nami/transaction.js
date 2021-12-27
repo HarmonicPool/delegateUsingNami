@@ -1,7 +1,7 @@
-import CoinSelection from "./coinSelection";
-import Loader from "./loader";
+const CoinSelection = require("./coinSelection");
+const Loader = require("./loader").Loader;
 
-export const blockfrostRequest = ctx => async (endpoint, headers, body) => {
+const blockfrostRequest = ctx => async (endpoint, headers, body) => {
   return await fetch(
     `https://cardano-mainnet.blockfrost.io/api/v0` + endpoint,
     {
@@ -10,6 +10,7 @@ export const blockfrostRequest = ctx => async (endpoint, headers, body) => {
   ).then((res) => res.json());
 };
 
+//get protocol parameters needed for the trasaction
 const initTx = ctx => async () => {
   await Loader.load();
 
@@ -28,11 +29,12 @@ const initTx = ctx => async () => {
   };
 };
 
-export const getPoolId = (poolId) => {
+const getPoolId = (poolId) => {
   return Buffer.from(Loader.Cardano.Ed25519KeyHash.from_bech32(poolId).to_bytes(), "hex").toString("hex")
 }
 
-export const delegationTx = ctx => async (delegation, targetPoolId) => {
+
+const delegationTx = ctx => async (delegation, targetPoolId) => {
 
   await Loader.load();
   const protocolParameters = await initTx(ctx)();
@@ -169,7 +171,8 @@ export const delegationTx = ctx => async (delegation, targetPoolId) => {
   return transaction;
 };
 
-export const signTx = async (transaction) => {
+
+const signTx = async (transaction) => {
   await Loader.load();
   const witnesses = await window.cardano.signTx(
     Buffer.from(transaction.to_bytes(), "hex").toString("hex")
@@ -183,20 +186,36 @@ export const signTx = async (transaction) => {
   return signedTx;
 };
 
-export const submitTx = async (signedTx) => {
+
+const submitTx = async (signedTx) => {
   const txHash = await window.cardano.submitTx(
     Buffer.from(signedTx.to_bytes(), "hex").toString("hex")
   );
   return txHash;
 };
 
-export const getDelegation = ctx => async () => {
+
+const getDelegation = ctx => async () => {
   await Loader.load();
+
   const rawAddress = await window.cardano.getRewardAddress();
   const rewardAddress = Loader.Cardano.Address.from_bytes(
     Buffer.from(rawAddress, "hex")
   ).to_bech32();
+
   const stake = await blockfrostRequest(ctx)(`/accounts/${rewardAddress}`);
+
   if (!stake || stake.error || !stake.pool_id) return {};
+
   return stake;
 };
+
+module.exports = {
+  blockfrostRequest,
+  initTx,
+  getPoolId,
+  delegationTx,
+  signTx,
+  submitTx,
+  getDelegation
+}

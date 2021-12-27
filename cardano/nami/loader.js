@@ -24,4 +24,4 @@ class Loader {
   }
 }
   
-export default new Loader();
+module.exports.Loader = new Loader();

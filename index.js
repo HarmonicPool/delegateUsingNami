@@ -1,7 +1,5 @@
-import NamiDelegationError from "./errors/DelegationError";
-import makeNamiInterface from "./cardano/nami"
-
-export { NamiDelegationError, makeNamiInterface };
+const NamiDelegationError = require( "./errors/DelegationError" ).NamiDelegationError;
+const NamiInterface = require( "./cardano/nami" );
 
 /**
  * 
@@ -17,7 +15,7 @@ export { NamiDelegationError, makeNamiInterface };
  *  
  * @returns the delegation transaction hash you can use to check the transaction state on cardano mainnet explorers
  */
-export default async function delegateUsingNami(
+module.exports.delegateUsingNami = async function(
     pool_id_bech_32,
     blockfrost_project_id,
     options = {}

@@ -1,5 +1,5 @@
 
-  import Loader from "./loader";
+  const Loader = require("./loader").Loader;
   /**
    * BerryPool implementation of the __Random-Improve__ coin selection algorithm.
    *
@@ -642,4 +642,4 @@
     return big < 0 ? big * BigInt(-1) : big;
   }
   
-  export default CoinSelection;
+  module.exports = CoinSelection;

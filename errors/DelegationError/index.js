@@ -1,6 +1,6 @@
 
 
-export default class NamiDelegationError extends Error
+class NamiDelegationError extends Error
 {
     /**
      * @private
@@ -62,3 +62,5 @@ export default class NamiDelegationError extends Error
         return NamiDelegationError.getErrorCodeDescription( this._errorCode );
     }
 }
+
+module.exports.NamiDelegationError = NamiDelegationError;
