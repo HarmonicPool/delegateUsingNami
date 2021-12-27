@@ -34,6 +34,11 @@ class NamiInterface
     private_namiInterface_hasBeenInitialized = true;
   }
 
+  /**
+   * 
+   * @param {string} targetPoolId 
+   * @returns 
+   */
   static createDelegationTransaction( targetPoolId )
   {
     if( !private_namiInterface_hasBeenInitialized ) throw Error("NamiInterface.init must be called before using any other method");

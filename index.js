@@ -21,10 +21,12 @@ module.exports.delegateUsingNami = async function(
     options = {}
 )
 {
+    // -------------- env check -------------- //
     if( typeof window === "undefined" ) throw new NamiDelegationError("delegateUsingNami can work only in a browser context", -1);
 
     if( !window.cardano ) throw new NamiDelegationError("unable to detect the Nami browser extension", 1);
 
+    // -------------- handle unabled Nami -------------- //
     if( typeof options !== "object" ) throw NamiDelegationError("invaid option");
 
     const _opt = {
@@ -59,6 +61,8 @@ module.exports.delegateUsingNami = async function(
         }
     }
 
+    // -------------- input check -------------- //
+
     // removes any potential whitespace
     const _pool_id = formatString( pool_id_bech_32 );
 
@@ -73,14 +77,15 @@ module.exports.delegateUsingNami = async function(
     // removes any potential whitespace
     const _blockfrost = formatString( blockfrost_project_id );
 
-    const NamiInterface = makeNamiInterface( _blockfrost );
+    // -------------- magic starts here -------------- //
+
+    NamiInterface.init( _blockfrost );
 
     // returns the transaction hash
     return (
-        await NamiInterface.submitTx(
-            await NamiInterface.signTx(
-                await NamiInterface.delegationTx(
-                    await NamiInterface.getDelegation(),
+        await NamiInterface.submitTransaction(
+            await NamiInterface.signTransaction(
+                await NamiInterface.createDelegationTransaction(
                     _pool_id
                 )
             )
