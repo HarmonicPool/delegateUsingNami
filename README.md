@@ -90,10 +90,9 @@ check the [documentation/examples](https://github.com/HarmonicPool/delegateUsing
 Any code correction you may find useful is a great form of support for all the Cardano community, you can send them to the [Harmonic Pool mail](mailto:harmonic.pool@protonmail.com)
 
 
-other great forms to show support is by [delegating to Harmonic Pool](https://harmonicpool.on.fleek.co/delegate/)
-
-
-or donating ADA to the following address that delegates to Harmonic:
+other great forms to show support are:
+ - [delegating to Harmonic Pool](https://harmonicpool.on.fleek.co/delegate/)
+ - donating ADA to the following address that delegates to Harmonic:
 
 ```addr1qxyryaacjdwau64wyf5truhq2akuc50dunrzlpj82pcjjkwpcdn8a48cpt55dp9d7wc8khg8aksheu62u4nhrdtgddeqd4r83d```
 
