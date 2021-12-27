@@ -27,8 +27,8 @@ npm install https://github.com/HarmonicPool/delegateUsingNami
 ## Usage
 
 <a name="basic_delegation">
-    #### basic delegation functionality
 </a>
+#### basic delegation functionality
 
 ```js
 /*... other imports ...*/
@@ -44,8 +44,8 @@ delegateUsingNami(
 /*...*/
 ```
 <a name="deleg_with_logic">
-    #### In combination with NamiInterface static class
 </a>
+#### In combination with NamiInterface static class
 
 
 ```js
@@ -77,13 +77,14 @@ async function myDelegationFunction()
 /*...*/
 ```
 <a name="oth_examples">
-    #### other examples
 </a>
+#### other examples
+
 check the [documentation/examples](https://github.com/HarmonicPool/delegateUsingNami/tree/main/documentation/examples) folder for more
 
 <a name="Support">
-    ## Support Harmonic
 </a>
+## Support Harmonic
 Any code correction you may find usefull are a great form of support for all the Cardano community, you can send them tho the [Harmonic Pool mail](mailto:harmonic.pool@protonmail.com?subject=delegate-using-nami package code suggestion)
 
 other great forms to show support is by [delegating to Harmonic Pool](https://harmonicpool.on.fleek.co/delegate/)
