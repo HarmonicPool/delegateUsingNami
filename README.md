@@ -46,7 +46,7 @@ delegateUsingNami(
 ```
 <a name="deleg_with_logic">
 </a>
-#### In combination with NamiInterface static class
+<h4>In combination with NamiInterface static class</h4>
 \
 
 ```js
