@@ -1,5 +1,5 @@
 {
-  "name": "@harmonic/delegate-using-nami",
+  "name": "@harmonicpool/delegate-using-nami",
   "version": "1.0.0",
   "description": "simple function allowing your website to have an interface with the Nami Wallet in order to delegate to a pool",
   "main": "index.js",
