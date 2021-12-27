@@ -87,7 +87,7 @@ check the [documentation/examples](https://github.com/HarmonicPool/delegateUsing
 <h2>Support Harmonic</h2>
 
 
-Any code correction you may find usefull are a great form of support for all the Cardano community, you can send them tho the [Harmonic Pool mail](mailto:harmonic.pool@protonmail.com)
+Any code correction you may find useful is a great form of support for all the Cardano community, you can send them to the [Harmonic Pool mail](mailto:harmonic.pool@protonmail.com)
 
 
 other great forms to show support is by [delegating to Harmonic Pool](https://harmonicpool.on.fleek.co/delegate/)
