@@ -1,0 +1,18 @@
+{
+  "name": "delegate-using-nami",
+  "version": "1.0.0",
+  "description": "simple function allowing your website to have an interface with the Nami Wallet in order to delegate to a give pool",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "cardano",
+    "ADA",
+    "delegation",
+    "stake",
+    "decentralization"
+  ],
+  "author": "Michele Nuzzi",
+  "license": "ISC"
+}
