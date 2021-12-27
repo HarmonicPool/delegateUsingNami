@@ -16,7 +16,7 @@
     "decentralization"
   ],
   "author": "Michele Nuzzi",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HarmonicPool/delegateUsingNami.git"
