@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
   },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
   "keywords": [
     "Nami",
     "NamiWallet",
