@@ -5,17 +5,16 @@
 - [Prerequisites](#Prerequisites)
 - [Installation](#Installation)
 - [Usage](#Usage)
-    - [basic usage](#basic delegation functionality)
-    - [with some logic](#In combination with NamiInterface static class)
-    - [other examples](#other examples)
-- [Support Harmonic](#Support Harmonic)
+    - [basic usage](#basic_delegation)
+    - [with some logic](#deleg_with_logic)
+    - [other examples](#oth_examples)
+- [Support Harmonic](#Support)
 
-\
 ## Prerequisites
 
 make sure to enable web-assembly if not configured by default.
 
-You may find some help in the [documentation/knownIssues/allowing_web-assembly.md]() folder
+You may find some help in the [documentation/knownIssues/allowing_web-assembly.md](https://github.com/HarmonicPool/delegateUsingNami/blob/main/documentation/knownIssues/allowing_web-assembly.md) folder
 
 ## Installation
 
@@ -27,7 +26,9 @@ npm install https://github.com/HarmonicPool/delegateUsingNami
 
 ## Usage
 
-#### basic delegation functionality
+<a name="basic_delegation">
+    #### basic delegation functionality
+</a>
 
 ```js
 /*... other imports ...*/
@@ -42,8 +43,10 @@ delegateUsingNami(
 
 /*...*/
 ```
+<a name="deleg_with_logic">
+    #### In combination with NamiInterface static class
+</a>
 
-#### In combination with NamiInterface static class
 
 ```js
 /*... other imports ...*/
@@ -73,13 +76,14 @@ async function myDelegationFunction()
 
 /*...*/
 ```
+<a name="oth_examples">
+    #### other examples
+</a>
+check the [documentation/examples](https://github.com/HarmonicPool/delegateUsingNami/tree/main/documentation/examples) folder for more
 
-#### other examples
-check the [documentation/examples]() folder for more
-
-
-## Support Harmonic
-
+<a name="Support">
+    ## Support Harmonic
+</a>
 Any code correction you may find usefull are a great form of support for all the Cardano community, you can send them tho the [Harmonic Pool mail](mailto:harmonic.pool@protonmail.com?subject=delegate-using-nami package code suggestion)
 
 other great forms to show support is by [delegating to Harmonic Pool](https://harmonicpool.on.fleek.co/delegate/)
