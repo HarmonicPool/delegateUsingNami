@@ -59,7 +59,7 @@ import NamiInterface from '@harmonicpool/delegate-using-nami/cardano/nami';
 
 async function myDelegationFunction()
 {
-    await NamiInterface.init("<your blockforst api key>");
+    NamiInterface.init("<your blockforst api key>");
 
     const currentUserDelegation = await NamiInterface.getCurrentDelegation();
 
