@@ -14,9 +14,11 @@
 
 make sure to enable web-assembly if not configured by default.
 
-You may find some help in the [documentation/knownIssues/allowing_web-assembly.md](https://github.com/HarmonicPool/delegateUsingNami/blob/main/documentation/knownIssues/allowing_web-assembly.md) folder
+You may find some help at [documentation/knownIssues/allowing_web-assembly.md](https://github.com/HarmonicPool/delegateUsingNami/blob/main/documentation/knownIssues/allowing_web-assembly.md)
 
 ## Installation
+
+make sure you have a folder called ```node_modules``` in your project
 
 run the following in your project directory
 
